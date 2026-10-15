@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente de Soporte IA - Automatización de Atención al Cliente</title>
+    <meta name="description" content="Agente autónomo en la nube impulsado por Gemini AI y Google Sheets para clasificar quejas y soporte.">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --border: #334155;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+        header {
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border-bottom: 1px solid var(--border);
+        }
+        header h1 {
+            font-size: 2.25rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            color: var(--accent);
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agente de Soporte IA</h1>
+        <p>Sistema inteligente de análisis y clasificación automática de quejas y retroalimentación.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>🤖 ¿Qué hace esta aplicación?</h2>
+            <p>
+                Esta aplicación revisa automáticamente las respuestas enviadas a un formulario de clientes y almacenadas en Google Sheets. Utiliza el modelo de inteligencia artificial <strong>Google Gemini</strong> para analizar el contenido del comentario, clasificar la incidencia en una de las categorías predefinidas (<strong>Ventas</strong>, <strong>Soporte Técnico</strong> o <strong>Logística</strong>) y determinar el sentimiento del cliente (<strong>Positivo</strong>, <strong>Negativo</strong> o <strong>Neutro</strong>).
+            </p>
+            <p style="margin-top: 0.75rem;">
+                Una vez procesado el análisis, escribe los resultados directamente en las columnas correspondientes de la misma hoja de cálculo y marca la fila como procesada.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🎓 Propósito del Proyecto</h2>
+            <p>
+                Este sistema es un <strong>proyecto escolar del taller de automatización con IA</strong>. Ha sido diseñado con fines estrictamente académicos para demostrar la integración de APIs modernas, flujos de trabajo en la nube con GitHub Actions y buenas prácticas de seguridad y privacidad en el manejo de credenciales.
+            </p>
+            <div class="badge">Uso Exclusivo de Laboratorio</div>
+        </section>
+
+        <section class="card">
+            <h2>🔒 ¿Quién la utiliza?</h2>
+            <p>
+                La aplicación es de <strong>uso personal y privado</strong>. Está configurada para operar exclusivamente por el alumno titular del proyecto con su propia cuenta de Google autenticada. No es un servicio abierto al público en general ni comercial.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Para conocer detalles sobre el tratamiento de datos, consulta nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
+        <p style="margin-top: 0.5rem;">© 2026 Agente de Soporte IA — Proyecto Académico</p>
+    </footer>
+</body>
+</html>
